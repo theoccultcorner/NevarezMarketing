@@ -1,4 +1,4 @@
-# nevarez Marketing Website with twilio form
+# Nevarez Marketing website with Twilio form
 Receive SMS text messages from your Website form
  
 # Installation
