@@ -134,15 +134,23 @@
       gap: 1.5rem;
     }
 
-    /* mobile-only call button inside hero */
-    .mobile-call-btn {
-      display: none; /* hidden on desktop */
-      margin-top: 14px;
-      border-radius: 999px;
-      background-color: #ffffff;
-      color: #000;
-      font-weight: 600;
-      text-transform: none;
+    /* Intro blurb */
+    .intro-section {
+      padding: 30px 20px 10px;
+      background-color: #fff;
+    }
+
+    .intro-section .container {
+      max-width: 900px;
+    }
+
+    .intro-section p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .intro-highlight {
+      font-weight: 500;
     }
 
     /* Section headings */
@@ -192,6 +200,30 @@
       margin-bottom: 0.5rem;
     }
 
+    /* Social media explainer */
+    .social-explainer {
+      background-color: #f9fafb;
+      padding: 40px 20px 20px;
+    }
+
+    .social-explainer .container {
+      max-width: 900px;
+    }
+
+    .social-explainer p {
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    .social-explainer ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+
+    .social-explainer li {
+      margin-bottom: 0.4rem;
+    }
+
     /* Pricing Section */
     .pricing-section {
       background-color: #fafafa;
@@ -214,7 +246,7 @@
     .pricing-title {
       font-size: 1.3rem;
       font-weight: 700;
-      display: block;
+      display: inline-block;
       margin-bottom: 0.6rem;
     }
 
@@ -264,6 +296,15 @@
       text-transform: uppercase;
       letter-spacing: 0.07em;
       margin-bottom: 0.8rem;
+    }
+
+    .card-title .material-icons {
+      font-size: 20px;
+    }
+
+    .card-reveal p {
+      font-size: 0.9rem;
+      line-height: 1.5;
     }
 
     /* CTA band */
@@ -321,13 +362,13 @@
       color: #bbb;
     }
 
-    /* 🔔 Floating Call Button (mobile only) */
+    /* 🔔 Floating Call Button */
     .call-floating-btn {
       position: fixed;
       right: 16px;
       bottom: 16px;
       z-index: 1000;
-      display: none; /* hidden on desktop */
+      display: inline-flex;
       align-items: center;
       gap: 8px;
       background-color: var(--gold);
@@ -374,17 +415,7 @@
         font-size: 1rem;
       }
 
-      .hero .trust-row {
-        flex-direction: column;
-        gap: 0.8rem;
-      }
-
-      .mobile-call-btn {
-        display: inline-block; /* show only on mobile */
-      }
-
       .call-floating-btn {
-        display: inline-flex; /* show floating bubble on mobile */
         right: 12px;
         bottom: 12px;
         padding: 10px 14px;
@@ -427,11 +458,6 @@
         Book a Call
       </a>
     </li>
-    <li>
-      <a href="tel:+18058916265">
-        📞 Call 805-891-6265
-      </a>
-    </li>
   </ul>
 
   <!-- HERO -->
@@ -445,7 +471,7 @@
       </div>
 
       <p class="hero-subtitle">
-        Automating your marketing strategy with A.I. for businesses in Santa Maria & beyond.
+        Automating your marketing strategy with A.I. for businesses in Santa Maria &amp; beyond.
       </p>
 
       <a
@@ -455,19 +481,23 @@
         👉 Book a Strategy Call 👈
       </a>
 
-      <!-- mobile-only call button inside hero -->
-      <a
-        href="tel:+18058916265"
-        class="btn mobile-call-btn waves-effect waves-dark"
-      >
-        📞 Call 805-891-6265
-      </a>
-
       <div class="trust-row">
         <span><i class="material-icons tiny">check_circle</i> Local to Santa Maria, CA</span>
-        <span><i class="material-icons tiny">flash_on</i> A.I.-driven content & automation</span>
-        <span><i class="material-icons tiny">timeline</i> Focused on growth & ROI</span>
+        <span><i class="material-icons tiny">flash_on</i> A.I.-driven content &amp; automation</span>
+        <span><i class="material-icons tiny">timeline</i> Focused on growth &amp; ROI</span>
       </div>
+    </div>
+  </section>
+
+  <!-- INTRO BLURB -->
+  <section class="intro-section">
+    <div class="container">
+      <p>
+        <span class="intro-highlight">Looking for a digital marketing agency that can actually move the needle?</span>
+        Nevarez Marketing, based on California’s Central Coast, blends web development, SEO, social media,
+        and paid ads with tight tracking. We integrate tools like Facebook Pixel and Google Analytics so every
+        click, call, and conversion is measured and optimized.
+      </p>
     </div>
   </section>
 
@@ -483,16 +513,17 @@
         <div class="col s12 m4 service-card">
           <div class="card">
             <div class="card-image">
-              <img src="me8.png" alt="Email Automation" />
+              <!-- replace with your email automation illustration -->
+              <img src="email-automation.png" alt="Email Automation" />
             </div>
             <div class="card-content center">
               <div class="card-icon">
                 <i class="material-icons">email</i>
               </div>
-              <span class="card-title">Email Automation</span>
+              <span class="card-title">Email Automation &amp; Analytics</span>
               <p>
-                Automate your email campaigns for consistent, high-ROI touchpoints:
-                weekly newsletters, drip sequences, and smart follow-ups.
+                Set up newsletters, drip sequences, and behavior-based follow-ups with full data tracking
+                so you know exactly what’s working.
               </p>
             </div>
           </div>
@@ -502,7 +533,8 @@
         <div class="col s12 m4 service-card">
           <div class="card">
             <div class="card-image">
-              <img src="me1.png" alt="Social Media Management" />
+              <!-- replace with your social media illustration -->
+              <img src="social-media.png" alt="Social Media Management" />
             </div>
             <div class="card-content center">
               <div class="card-icon">
@@ -510,8 +542,8 @@
               </div>
               <span class="card-title">Social Media Management</span>
               <p>
-                High-quality content, daily activity, engagement monitoring, and
-                storytelling that turns followers into loyal customers.
+                Daily content, engagement, and community building on the platforms that matter most
+                to your customers.
               </p>
             </div>
           </div>
@@ -521,7 +553,8 @@
         <div class="col s12 m4 service-card">
           <div class="card">
             <div class="card-image">
-              <img src="me3.png" alt="Ad Management" />
+              <!-- replace with your ad management illustration -->
+              <img src="ad-management.png" alt="Ad Management" />
             </div>
             <div class="card-content center">
               <div class="card-icon">
@@ -529,13 +562,38 @@
               </div>
               <span class="card-title">Ad Management</span>
               <p>
-                Growth-focused ads on Facebook, Instagram, TikTok, and LinkedIn.
-                Lower costs, higher returns, and data-driven optimization.
+                TikTok, Google, Facebook/Meta &amp; Instagram ads designed to drive leads, calls,
+                and sales—not just impressions.
               </p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA EXPLAINER -->
+  <section class="social-explainer">
+    <div class="container">
+      <h4 class="section-title">
+        Why <span>Social Media</span> Matters
+      </h4>
+      <p>
+        Social media is one of the fastest ways to reach your audience, build relationships, and keep your
+        brand top-of-mind. Done right, it sends highly engaged traffic to your website and helps generate
+        real leads and sales.
+      </p>
+      <p>Our approach focuses on:</p>
+      <ul>
+        <li>Creating content that is actually useful, entertaining, and on-brand.</li>
+        <li>Prioritizing quality over volume, with consistent posting.</li>
+        <li>Responding to comments and messages to build real relationships.</li>
+        <li>Using analytics to track what works and improve over time.</li>
+      </ul>
+      <p>
+        Beyond social media, we also offer SEO, email marketing, graphic design, and more—so your entire
+        digital presence works together.
+      </p>
     </div>
   </section>
 
@@ -551,14 +609,17 @@
         <div class="col s12 m4 pricing-card">
           <div class="card">
             <div class="card-content">
-              <span class="pricing-title">Startup</span>
+              <span class="card-title activator pricing-title">
+                Startup
+                <i class="material-icons right">more_vert</i>
+              </span>
               <div class="pricing-price">$750</div>
               <div class="pricing-frequency">per month</div>
               <ul class="pricing-feature-list">
                 <li>12 image posts (Facebook &amp; Instagram)</li>
                 <li>Page monitoring &amp; basic engagement</li>
                 <li>Social media + analytics integration</li>
-                <li>Sponsored posts setup &amp; management</li>
+                <li>Sponsored posts setup &amp; follower ads</li>
               </ul>
               <a
                 href="https://nevarez-marketing.square.site"
@@ -566,6 +627,21 @@
               >
                 Get Started
               </a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">
+                Startup Details
+                <i class="material-icons right">close</i>
+              </span>
+              <p>
+                Ideal for small businesses getting serious about social media. Our management fee covers
+                strategy, content creation, posting, and basic reporting. Ad spend is separate, so you stay
+                in control of how much you invest in paid promotion.
+              </p>
+              <p>
+                One-time setup fee of $150 includes connecting Facebook Pixel, Google Analytics, and
+                getting your campaign infrastructure ready.
+              </p>
             </div>
           </div>
         </div>
@@ -575,12 +651,15 @@
           <div class="card">
             <div class="card-content">
               <div class="pricing-badge">Most Popular</div>
-              <span class="pricing-title">Growth</span>
+              <span class="card-title activator pricing-title">
+                Growth
+                <i class="material-icons right">more_vert</i>
+              </span>
               <div class="pricing-price">$1350</div>
               <div class="pricing-frequency">per month</div>
               <ul class="pricing-feature-list">
                 <li>12 vertical videos (IG &amp; TikTok)</li>
-                <li>Page monitoring &amp; comments/DM oversight</li>
+                <li>Page monitoring &amp; comments/DM responding</li>
                 <li>Social media + analytics integration</li>
                 <li>Sponsored ads with A.I.-optimized targeting</li>
               </ul>
@@ -591,6 +670,20 @@
                 Grow My Brand
               </a>
             </div>
+            <div class="card-reveal">
+              <span class="card-title">
+                Growth Details
+                <i class="material-icons right">close</i>
+              </span>
+              <p>
+                For brands ready to show up on video and grow faster. You get vertical video content,
+                deeper engagement management, and more aggressive ad optimization.
+              </p>
+              <p>
+                Management fees typically range from $750–$1550 based on channels and volume. Ad budget is
+                billed directly to the platforms; we recommend a minimum of $150/month to see meaningful results.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -598,7 +691,10 @@
         <div class="col s12 m4 pricing-card">
           <div class="card">
             <div class="card-content">
-              <span class="pricing-title">Scale</span>
+              <span class="card-title activator pricing-title">
+                Scale
+                <i class="material-icons right">more_vert</i>
+              </span>
               <div class="pricing-price">$1550</div>
               <div class="pricing-frequency">per month</div>
               <ul class="pricing-feature-list">
@@ -613,6 +709,20 @@
               >
                 Scale My Business
               </a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">
+                Scale Details
+                <i class="material-icons right">close</i>
+              </span>
+              <p>
+                Built for businesses that want to dominate their niche with high-volume content and more
+                sophisticated ad funnels, including remarketing and lookalike audiences.
+              </p>
+              <p>
+                Many clients choose to invest larger ad budgets here to accelerate growth. We guide you on
+                how much to spend and where, then manage the campaigns and report back in plain English.
+              </p>
             </div>
           </div>
         </div>
@@ -677,9 +787,9 @@
     </div>
   </footer>
 
-  <!-- 📞 Floating Call Button (mobile) -->
+  <!-- 📞 Floating Call Button -->
   <a
-    href="tel:+18058916265"
+    href="tel:8058916265"
     class="call-floating-btn waves-effect waves-light"
     aria-label="Call Nevarez Marketing at 805-891-6265"
   >
