@@ -181,6 +181,36 @@
       margin-bottom: 0.5rem;
     }
 
+    /* Info cards section (NEW) */
+    .info-section {
+      padding: 40px 0 50px;
+      background-color: #ffffff;
+    }
+
+    .info-card .card {
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    }
+
+    .info-card .card-content p {
+      margin-bottom: 1.2rem;
+    }
+
+    .info-card .learn-more-btn {
+      border-radius: 999px;
+      text-transform: none;
+      font-weight: 600;
+      color: var(--gold);
+    }
+
+    .card-reveal {
+      background-color: #fafafa;
+    }
+
+    .card-reveal .card-title {
+      font-weight: 700;
+    }
+
     /* Pricing Section */
     .pricing-section {
       background-color: #fafafa;
@@ -310,40 +340,6 @@
       color: #bbb;
     }
 
-    /* 🔔 Floating Call Button */
-    .call-floating-btn {
-      position: fixed;
-      right: 16px;
-      bottom: 16px;
-      z-index: 1000;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background-color: var(--gold);
-      color: #000 !important;
-      padding: 10px 18px;
-      border-radius: 999px;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
-      text-transform: none;
-      letter-spacing: 0.04em;
-    }
-
-    .call-floating-btn i.material-icons {
-      font-size: 22px;
-    }
-
-    .call-floating-text {
-      font-size: 1rem;
-      white-space: nowrap;
-    }
-
-    .call-floating-btn:hover {
-      background-color: #f5ce57;
-      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
-    }
-
     /* Mobile tweaks */
     @media (max-width: 600px) {
       .hero {
@@ -361,17 +357,6 @@
 
       .hero .hero-subtitle {
         font-size: 1rem;
-      }
-
-      /* On small screens, keep the button readable but tight */
-      .call-floating-btn {
-        right: 12px;
-        bottom: 12px;
-        padding: 10px 14px;
-      }
-
-      .call-floating-text {
-        font-size: 0.95rem;
       }
     }
   </style>
@@ -498,6 +483,105 @@
               <p>
                 Growth-focused ads on Facebook, Instagram, TikTok, and LinkedIn.
                 Lower costs, higher returns, and data-driven optimization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO / EXPANDABLE CARDS (NEW) -->
+  <section class="info-section">
+    <div class="container">
+      <h4 class="section-title">
+        How <span>We Help You Grow</span>
+      </h4>
+      <div class="row">
+        <!-- About the agency -->
+        <div class="col s12 m4 info-card">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Central Coast Digital Marketing</span>
+              <p>
+                Nevarez Marketing is a full-service digital marketing agency based on the Central Coast of California.
+              </p>
+              <a class="btn-flat learn-more-btn activator">
+                Learn more <i class="material-icons right">expand_more</i>
+              </a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">
+                Central Coast Digital Marketing<i class="material-icons right">close</i>
+              </span>
+              <p>
+                We specialize in web development, SEO, and analytics for businesses of all sizes.
+                From local shops to growing brands, we build campaigns designed to increase
+                visibility, traffic, and revenue.
+              </p>
+              <p>
+                We also integrate Facebook Pixel and Google Analytics so you can clearly see
+                what’s working and make smarter decisions with real data.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social media strategy -->
+        <div class="col s12 m4 info-card">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Social Media That Sells</span>
+              <p>
+                Social media is where your customers are. We turn that attention into clicks, leads, and sales.
+              </p>
+              <a class="btn-flat learn-more-btn activator">
+                Learn more <i class="material-icons right">expand_more</i>
+              </a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">
+                Social Media That Sells<i class="material-icons right">close</i>
+              </span>
+              <p>
+                We create engaging, on-brand content that your audience actually wants to see—short-form video,
+                image posts, and stories that drive traffic back to your site and offers.
+              </p>
+              <p>
+                Posting consistently, responding to comments and messages, and tracking analytics are all handled
+                for you so your brand looks active, responsive, and trustworthy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing structure -->
+        <div class="col s12 m4 info-card">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">How Our Pricing Works</span>
+              <p>
+                Flexible monthly plans starting at $750, plus optional ad budget to grow even faster.
+              </p>
+              <a class="btn-flat learn-more-btn activator">
+                Learn more <i class="material-icons right">expand_more</i>
+              </a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">
+                How Our Pricing Works<i class="material-icons right">close</i>
+              </span>
+              <p>
+                Our management fee (typically $750–$1550/month) covers strategy, content, posting,
+                monitoring, and reporting. This is what you pay us to run the campaign for you.
+              </p>
+              <p>
+                You can optionally add an ad budget for TikTok, Google, or Facebook/Meta to speed up growth.
+                Ad spend is paid directly to the platforms; we manage the campaigns for you.
+              </p>
+              <p>
+                There’s also a one-time setup fee of $150 to get your tracking, dashboards, and accounts
+                properly connected so everything is ready to scale.
               </p>
             </div>
           </div>
@@ -643,16 +727,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- 📞 Floating Call Button -->
-  <a
-    href="tel:8058916265"
-    class="call-floating-btn waves-effect waves-light"
-    aria-label="Call Nevarez Marketing at 805-891-6265"
-  >
-    <i class="material-icons">phone</i>
-    <span class="call-floating-text">805-891-6265</span>
-  </a>
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
