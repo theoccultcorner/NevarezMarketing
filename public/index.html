@@ -430,24 +430,34 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav>
-    <div class="nav-wrapper container">
-      <a href="#top" class="brand-logo">
-        <span>NEVAREZ</span> Marketing
-      </a>
-      <a href="#" data-target="mobile-nav" class="sidenav-trigger"
-        ><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li>
-          <a href="https://nevarez-marketing.square.site/s/appointments" class="btn gold-btn black-text" style="background-color:#fff; border-radius:999px; text-transform:none; font-weight:600;">
-            Book a Call
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<nav>
+  <div class="nav-wrapper container">
+    
+    <!-- BRAND LOGO (SHOW ON DESKTOP ONLY) -->
+    <a href="#top" class="brand-logo hide-on-small-only">
+      <span>NEVAREZ</span> Marketing
+    </a>
+
+    <!-- MOBILE MENU ICON -->
+    <a href="#" data-target="mobile-nav" class="sidenav-trigger show-on-small">
+      <i class="material-icons">menu</i>
+    </a>
+
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li>
+        <a href="https://nevarez-marketing.square.site/s/appointments" 
+           class="btn gold-btn black-text" 
+           style="background-color:#fff; border-radius:999px; text-transform:none; font-weight:600;">
+          Book a Call
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
 
   <!-- Mobile Nav -->
   <ul class="sidenav" id="mobile-nav">
